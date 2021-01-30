@@ -8,6 +8,7 @@
 #include <iostream>
 using std::cout;
 using std::cin;
+using std::string;
 using std::endl;
 
 int main() {
@@ -22,7 +23,7 @@ int main() {
 	{
 		for (int i = 0; i < n; ++i)
 		{
-			cout << i;
+			cout << string(n-i, ' ') << string(1+(2*i),'#') << endl;
 		}
 	}
 

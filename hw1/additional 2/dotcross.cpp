@@ -23,7 +23,15 @@ int main() {
 	{
 		float dprod;
 		dprod = Ax*Bx + Ay*By + Az*Bz;
-		cout << "A dot B is: " << dprod;
+		cout << "A dot B is: " << dprod << endl;
 	}
 
+	int cross();
+	{
+		float Cx, Cy, Cz;
+		Cx = Ay*Bz - Az*By;
+		Cy = Az*Bx - Ax*Bz;
+		Cz = Ax*By - Ay*Bx;
+		cout << "A cross B is: (" << Cx << "," << Cy << "," << Cz << ")";
+	}
 }

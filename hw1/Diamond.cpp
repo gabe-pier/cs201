@@ -25,6 +25,10 @@ int main() {
 		{
 			cout << string(n-i, ' ') << string(1+(2*i),'#') << endl;
 		}
+		for (int i = 0; i < n-1; ++i)
+		{
+			cout << string(i+2, ' ') << string(((n-1)*2)-1-2*i, '#') << endl;
+		}
 	}
 
 }

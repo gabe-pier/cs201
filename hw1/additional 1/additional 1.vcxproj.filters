@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Diamond.cpp">
+    <ClCompile Include="mileskm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

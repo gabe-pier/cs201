@@ -12,7 +12,10 @@ using std::cin;
 using std::string;
 using std::endl;
 
-int miles()
-{
-	cout << "input miles:";
+int main() {
+	float mi;
+	cout << "input miles:\n";
+	cin >> mi;
+	cout << mi * 1.609;
+	return 0;
 }

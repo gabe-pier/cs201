@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{66d7311f-fee4-4d8c-bdde-891e9afa5172}</ProjectGuid>
-    <RootNamespace>hw1</RootNamespace>
+    <ProjectGuid>{0113efa0-2247-4b0e-9540-fb4cc262d10b}</ProjectGuid>
+    <RootNamespace>additional1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Diamond.cpp" />
+    <ClCompile Include="mileskm.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

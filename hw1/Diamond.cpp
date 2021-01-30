@@ -31,5 +31,5 @@ int main() {
 			cout << string(i+2, ' ') << string(((n-1)*2)-1-2*i, '#') << endl;
 		}
 	}
-
+	return 0;
 }

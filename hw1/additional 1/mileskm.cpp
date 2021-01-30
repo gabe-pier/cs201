@@ -16,6 +16,6 @@ int main() {
 	float mi;
 	cout << "input miles:\n";
 	cin >> mi;
-	cout << mi * 1.609;
+	cout << "That is: " << mi * 1.609 << "km";
 	return 0;
 }

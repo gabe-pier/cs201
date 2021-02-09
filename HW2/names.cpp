@@ -16,14 +16,23 @@ using std::cout;
 using std::getline;
 using std::cin;
 
-int main(int argc, char **argv) 
+
+/*
+* Function asks the user for an input of 10 names.
+*/
+void InputNames(vector<string>& names)
 {
-	vector<string> names;
 	for (int i = 0; i < 10; i++) {
 		string name;
 		cout << "Please enter a name: ";
 		getline(cin, name);
 		names.push_back(name);
 	}
-	return 0;
 }
+
+
+int main(int argc, char **argv) 
+{
+	
+}
+

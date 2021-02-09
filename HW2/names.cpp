@@ -1,8 +1,8 @@
 /**
-* diamond.cpp
+* names.cpp
 * Gabe Pier
-* 29 Jan 2021
-* hw1 for cs 201
+* 08 Feb 2021
+* hw2 for cs 201
 * This code will take an integer input then print a diamond of that respective size.
 */
 
@@ -29,7 +29,13 @@ void InputNames(vector<string>& names)
 		names.push_back(name);
 	}
 }
+/*
+* Searches the list for a specific name.
+*/
+bool DoesNameExist(const string& nameToFind, const vector<string>& names)
+{
 
+}
 
 int main(int argc, char **argv) 
 {

@@ -6,6 +6,7 @@
 */
 
 #include <iostream>
+#include "square.h"
 using std::cout;
 using std::endl;
 
@@ -16,5 +17,6 @@ int main() {
 		cout << i << endl;
 		i++;
 	}
+	int s = square();
 	return 0;
 }

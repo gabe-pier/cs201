@@ -18,13 +18,5 @@
     <ClCompile Include="part1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="part2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="square.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

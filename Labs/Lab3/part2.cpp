@@ -10,13 +10,18 @@ using std::cout;
 using std::endl;
 using std::string;
 
-int main() {
+int square() {
+	cout << "square of stars" << endl;
 	int i = 1;
 	while (i <= 10)
-		n = 
-		while (n <= 60)
 	{
-		cout << string(60, "*") << endl;
+		int j = 1;
+		while (j <= 60)
+		{
+			cout << "*";
+			j++;
+		}
+		cout << endl;
 		i++;
 	}
 	return 0;

@@ -10,6 +10,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "Money.h"
 using std::vector;
 using std::string;
 using std::cout;
@@ -71,5 +72,7 @@ int main(int argc, char **argv)
 	DoesNameExist(namesToFind, names);
 	PrintNames(names);
 	NameLength(names);
+	cout << "\nAdditional Program 1\n";
+	money();
 }
 

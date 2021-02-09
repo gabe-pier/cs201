@@ -20,8 +20,9 @@ using std::cin;
 /*
 * Function asks the user for an input of 10 names.
 */
-void InputNames(vector<string>& names)
+void InputNames()
 {
+	vector<string> names;
 	for (int i = 0; i < 10; i++) {
 		string name;
 		cout << "Please enter a name: ";
@@ -34,11 +35,11 @@ void InputNames(vector<string>& names)
 */
 bool DoesNameExist(const string& nameToFind, const vector<string>& names)
 {
-
+	if 
 }
 
 int main(int argc, char **argv) 
 {
-	
+	InputNames();
 }
 

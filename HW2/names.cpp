@@ -3,14 +3,14 @@
 * Gabe Pier
 * 08 Feb 2021
 * hw2 for cs 201
-* This code will take an integer input then print a diamond of that respective size.
+* This code will take a list of names and return their length.
 */
 
 #include <iostream>
 #include <vector>
 #include <string>
 #include <algorithm>
-#include "Money.h"
+#include "names.h"
 using std::vector;
 using std::string;
 using std::cout;
@@ -74,5 +74,7 @@ int main(int argc, char **argv)
 	NameLength(names);
 	cout << "\nAdditional Program 1\n";
 	money();
+	cout << "\nAdditional Program 2\n";
+	rice();
 }
 

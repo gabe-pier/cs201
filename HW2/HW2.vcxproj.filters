@@ -21,9 +21,12 @@
     <ClCompile Include="..\..\..\Downloads\money.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Money.h">
+    <ClInclude Include="names.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

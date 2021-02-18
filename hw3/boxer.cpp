@@ -53,7 +53,7 @@ void boxer() {
 	cin >> n;
 	cout << "Please input a string: ";
 	cin >> boxstring;
-	if (n <= 0) {
+	while (n <= 0) {
 		cout << "please input a positive integer! ";
 		cin >> n;
 	}

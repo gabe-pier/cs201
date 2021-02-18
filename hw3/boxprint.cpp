@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "boxer.h"
+#include "collatz.h"
 using namespace std;
 
 int main() {
@@ -20,6 +21,8 @@ int main() {
 		cout << "Would you like to make another box? (y/n) ";
 		cin >> a;
 	}
+	cout << "Additional program 1" << endl;
+	collatz();
 	return 0;
 }
 

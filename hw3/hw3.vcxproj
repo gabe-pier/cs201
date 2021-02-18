@@ -142,10 +142,12 @@
     <ClCompile Include="boxer.cpp" />
     <ClCompile Include="boxprint.cpp" />
     <ClCompile Include="collatz.cpp" />
+    <ClCompile Include="kelvin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boxer.h" />
     <ClInclude Include="collatz.h" />
+    <ClInclude Include="kelvin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

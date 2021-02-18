@@ -5,5 +5,5 @@ using namespace std;
 
 #include "kelvin.h"
 
-double kelvin();
+double ctok(double &c);
 #endif

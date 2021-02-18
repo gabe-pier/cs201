@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{99eadd20-646e-4fdc-ad1a-e50939eac66f}</ProjectGuid>
-    <RootNamespace>Lab7</RootNamespace>
+    <ProjectGuid>{bf6fb8b3-cf12-497f-9063-156e391c9bc5}</ProjectGuid>
+    <RootNamespace>lab8</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="intio.cpp" />
-    <ClCompile Include="part1.cpp" />
+    <ClCompile Include="lab8.cpp" />
+    <ClCompile Include="lab8_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="intio.hpp" />
+    <ClInclude Include="lab8.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

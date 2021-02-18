@@ -10,6 +10,25 @@
 #include "boxer.h"
 using namespace std;
 
+/* Loop for printing the top half and bottom half of the box. */
+void boxtop_bot(int &n, string &boxstring) {
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < 2 * size(boxstring) + 2; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+
+void boxmid(int& n, string& boxstring) {
+	for (int i = 0; i < n; i++) {
+		cout << "**";
+		for (int j = 0; j < size(boxstring) + 2; j++) {
+			cout << " ";
+		}
+	}
+}
+
 void boxer() {
 	int n;
 	string boxstring;
@@ -21,10 +40,7 @@ void boxer() {
 		cout << "please input a positive integer! ";
 		cin >> n;
 	}
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < 2 * size(boxstring) + 2; j++) {
-			cout << "*";
-		}
-		cout << endl;
-	}
+	boxtop_bot(n, boxstring);
+	boxmid(n, boxstring);
 }
+

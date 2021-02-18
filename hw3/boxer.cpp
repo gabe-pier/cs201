@@ -8,3 +8,15 @@
 
 #include <iostream>
 using namespace std;
+
+void boxer(int const &n, string &s) {
+	if (n <= 0) {
+		cout << "please input a positive integer! ";
+		cin >> n;
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < 2 * n + 2; j++) {
+			cout << "*" << endl;
+		}
+	}
+}

@@ -7,5 +7,10 @@
 */
 
 #include <iostream>
+#include "boxer.h"
 using namespace std;
+
+int main() {
+	boxer(4, "test");
+}
 

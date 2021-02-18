@@ -11,6 +11,7 @@
 using namespace std;
 
 int main() {
-	boxer(4, "test");
+	boxer();
+	return 0;
 }
 

@@ -5,5 +5,5 @@ using namespace std;
 
 #include "boxer.h"
 
-int boxer(int& n, string& s);
+void boxer();
 #endif

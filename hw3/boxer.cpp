@@ -13,20 +13,37 @@ using namespace std;
 /* Loop for printing the top half and bottom half of the box. */
 void boxtop_bot(int &n, string &boxstring) {
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < 2 * size(boxstring) + 2; j++) {
+		for (int j = 0; j < 2 * n + size(boxstring) + 2; j++) {
 			cout << "*";
 		}
 		cout << endl;
 	}
 }
 
+/* Loop for printing the middle sections of the box without text. */
 void boxmid(int& n, string& boxstring) {
 	for (int i = 0; i < n; i++) {
-		cout << "**";
-		for (int j = 0; j < size(boxstring) + 2; j++) {
-			cout << " ";
-		}
+		cout << "*";
 	}
+	for (int j = 0; j < size(boxstring) + 2; j++) {
+		cout << " ";
+	}
+	for (int i = 0; i < n; i++) {
+		cout << "*";
+	}
+	cout << endl;
+}
+
+/* Loop for printing the text section of the box. */
+void boxtext(int& n, string& boxstring) {
+	for (int i = 0; i < n; i++) {
+		cout << "*";
+	}
+	cout << " " << boxstring << " ";
+	for (int i = 0; i < n; i++) {
+		cout << "*";
+	}
+	cout << endl;
 }
 
 void boxer() {
@@ -42,5 +59,8 @@ void boxer() {
 	}
 	boxtop_bot(n, boxstring);
 	boxmid(n, boxstring);
+	boxtext(n, boxstring);
+	boxmid(n, boxstring);
+	boxtop_bot(n, boxstring);
 }
 

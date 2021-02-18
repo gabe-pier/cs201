@@ -12,6 +12,14 @@ using namespace std;
 
 int main() {
 	boxer();
+	string a;
+	cout << "Would you like to make another box? (y/n) ";
+	cin >> a;
+	while (a == "y") {
+		boxer();
+		cout << "Would you like to make another box? (y/n) ";
+		cin >> a;
+	}
 	return 0;
 }
 

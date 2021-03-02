@@ -15,7 +15,7 @@ int main() {
 	vector<string> tokens;
 	cout << "Please Input some text." << endl;
 	getline(cin, input);
-	cout << StringToTokensWS(input, tokens) << endl;
+	cout << "there are " << StringToTokensWS(input, tokens) << " tokens" << endl;
 	AnalyzeTokens(tokens);
 	cout << "~~~~~~~~~~ Bulls and Cows ~~~~~~~~~~" << endl;
 	bulls_cows();

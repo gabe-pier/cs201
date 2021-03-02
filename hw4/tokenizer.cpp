@@ -11,24 +11,26 @@
 #include "tokenizer.h"
 using namespace std;
 
+/*Gets line input from user*/
 bool ReadLine() {
 	string str;
 	cout << "input a string: ";
 	return !getline(cin, str);
 }
 
+/*Prints the size of the tokens*/
 unsigned StringToTokensWS(const string& input, vector<string>& tokens) {
 	istringstream ss(input);
 	string token;
 
 	while (getline(ss, token, ' ')) {
-		cout << token << '\n';
 		tokens.push_back(token);
 		tokens.push_back(" ");
 	}
 	return tokens.size();
 } 
 
+/*identifies the type of token*/
 void AnalyzeTokens(const vector<string>& tokens) {
 	for (int i = 0; i < tokens.size(); i++) {
 		if (tokens[i].at(0) == '\"') {

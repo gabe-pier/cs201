@@ -35,8 +35,16 @@ void AnalyzeTokens(const vector<string>& tokens) {
 			cout << "[string]\t";
 			cout << '\"' << tokens[i] << '\"' << '\n';
 		}
-		else if (tokens[i].at(0) == "") {
+		else if (tokens[i].at(0) == ' ') {
 			cout << "[whitespace]\t";
+			cout << '\"' << tokens[i] << '\"' << '\n';
+		}
+		else if ((tokens[i].at(0) == '+') || (tokens[i].at(0) == '-') || (tokens[i].at(0) == '=') || (tokens[i].at(0) == '*') || (tokens[i].at(0) == '/') || (tokens[i].at(0) == '%')) {
+			cout << "[operator]\t";
+			cout << '\"' << tokens[i] << '\"' << '\n';
+		}
+		else if ((tokens[i].at(0) <= 'z') || (tokens[i].at(0) >= 'a') || (tokens[i].at(0) <= 'Z') || (tokens[i].at(0) >= 'A') || (tokens[i].at(0) <= '0') || (tokens[i].at(0) >= '9') || (tokens[i].at(0) == '_')) {
+			cout << "[Identifier]\t";
 			cout << '\"' << tokens[i] << '\"' << '\n';
 		}
 	}

@@ -14,4 +14,5 @@ int main() {
 	vector<string> tokens;
 	getline(cin, input);
 	cout << StringToTokensWS(input, tokens) << endl;
+	AnalyzeTokens(tokens);
 }

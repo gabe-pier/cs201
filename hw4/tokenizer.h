@@ -5,4 +5,5 @@ using namespace std;
 
 bool ReadLine();
 unsigned StringToTokensWS(const string& input, vector<string>& tokens);
+void AnalyzeTokens(const vector<string>& tokens);
 #endif

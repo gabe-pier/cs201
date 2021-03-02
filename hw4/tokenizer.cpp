@@ -30,5 +30,14 @@ unsigned StringToTokensWS(const string& input, vector<string>& tokens) {
 } 
 
 void AnalyzeTokens(const vector<string>& tokens) {
-
+	for (int i = 0; i < tokens.size(); i++) {
+		if (tokens[i].at(0) == '\"') {
+			cout << "[string]\t";
+			cout << '\"' << tokens[i] << '\"' << '\n';
+		}
+		else if (tokens[i].at(0) == "") {
+			cout << "[whitespace]\t";
+			cout << '\"' << tokens[i] << '\"' << '\n';
+		}
+	}
 }

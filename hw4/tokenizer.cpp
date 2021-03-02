@@ -25,5 +25,5 @@ unsigned StringToTokensWS(const string& input, vector<string>& tokens) {
 		cout << token << '\n';
 		tokens.push_back(token);
 	}
-	return size(tokens);
+	return tokens.size();
 } 

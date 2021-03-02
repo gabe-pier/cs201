@@ -10,6 +10,8 @@
 #include "tokenizer.h"
 
 int main() {
-	input = getline()
-	unsigned StringToTokensWS(input, vector<string>&tokens);
+	string input;
+	vector<string> tokens;
+	getline(cin, input);
+	cout << StringToTokensWS(input, tokens);
 }

@@ -13,5 +13,5 @@ int main() {
 	string input;
 	vector<string> tokens;
 	getline(cin, input);
-	cout << StringToTokensWS(input, tokens);
+	cout << StringToTokensWS(input, tokens) << endl;
 }

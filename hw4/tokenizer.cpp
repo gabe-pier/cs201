@@ -24,6 +24,11 @@ unsigned StringToTokensWS(const string& input, vector<string>& tokens) {
 	while (getline(ss, token, ' ')) {
 		cout << token << '\n';
 		tokens.push_back(token);
+		tokens.push_back(" ");
 	}
 	return tokens.size();
 } 
+
+void AnalyzeTokens(const vector<string>& tokens) {
+
+}

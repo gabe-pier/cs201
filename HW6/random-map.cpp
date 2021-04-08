@@ -4,6 +4,7 @@
 #include <map>
 #include <random>
 #include <cmath>
+#include <stdlib.h>
 
 
 int RandomBetweenU(int first, int last, int seed)
@@ -18,6 +19,12 @@ int RandomBetweenN(int first, int last, int seed)
 	std::normal_distribution<int> normal_dist(first, last);
 	int Nvalue = normal_dist(seed);
 	return Nvalue;
+}
+
+int RandomBetween(int first, int last)
+{
+	int Rvalue = rand() % last + first;
+	return Rvalue;
 }
 
 int main()

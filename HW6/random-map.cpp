@@ -4,13 +4,29 @@
 #include <map>
 #include <random>
 #include <cmath>
+
+
+int RandomBetweenU(int first, int last, int seed)
+{
+	std::uniform_int_distribution<int> uniform_dist(first, last);
+	int value = uniform_dist(seed);
+	return value;
+}
+
 int main()
 {
 	// Seed with a real random value, if available
 	std::random_device r;
 	// Choose a random mean between 1 and 6
 	std::default_random_engine e1(r());
-	std::uniform_int_distribution<int> uniform_dist(1, 6);
+	int f;
+	int l;
+
+	std::cout << "please input a lower bound: ";
+	std::cin >> f;
+	std::cout << "\nplease input an upper bound: ";
+	std::cin >> l;
+	std::uniform_int_distribution<int> uniform_dist(f, l);
 	int mean = uniform_dist(e1);
 	std::cout << "Randomly-chosen mean: " << mean << '\n';
 	// Generate a normal distribution around that mean
@@ -26,4 +42,4 @@ int main()
 		std::cout << std::fixed << std::setprecision(1) << std::setw(2)
 			<< p.first << ' ' << std::string(p.second / 200, '*') << '\n';
 	}
-}
+}

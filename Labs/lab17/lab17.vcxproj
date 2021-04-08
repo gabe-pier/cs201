@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d79b0b39-ab31-408e-bceb-76fd6c6f7d80}</ProjectGuid>
-    <RootNamespace>hw4</RootNamespace>
+    <ProjectGuid>{740ae4aa-3c42-4b50-9c5b-b256f96fd0e6}</ProjectGuid>
+    <RootNamespace>lab17</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bulls-and-cows.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="tokenizer.cpp" />
-    <ClCompile Include="tokenizertest.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="bulls-and-cows.h" />
-    <ClInclude Include="tokenizer.h" />
+    <ClCompile Include="search_compare.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

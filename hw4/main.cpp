@@ -19,6 +19,4 @@ int main() {
 	AnalyzeTokens(tokens);
 	cout << "~~~~~~~~~~ Bulls and Cows ~~~~~~~~~~" << endl;
 	bulls_cows();
-	cout << "~~~~~~~~~~ fifo-lifo ~~~~~~~~~~" << endl;
-
 }

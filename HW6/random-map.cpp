@@ -9,8 +9,15 @@
 int RandomBetweenU(int first, int last, int seed)
 {
 	std::uniform_int_distribution<int> uniform_dist(first, last);
-	int value = uniform_dist(seed);
-	return value;
+	int Uvalue = uniform_dist(seed);
+	return Uvalue;
+}
+
+int RandomBetweenN(int first, int last, int seed)
+{
+	std::normal_distribution<int> normal_dist(first, last);
+	int Nvalue = normal_dist(seed);
+	return Nvalue;
 }
 
 int main()

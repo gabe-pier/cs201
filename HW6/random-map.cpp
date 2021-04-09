@@ -84,6 +84,7 @@ int main()
 	std::cout << std::endl << "rand distribution" << std::endl;
 	PrintDistribution(histR);
 
-	std::cout << "~~~~~~~~~~~~~~Additional Program 2~~~~~~~~~~~~~~" << std::endl;
+	std::cout << "~~~~~~~~~~~~~~Additional Program 1~~~~~~~~~~~~~~" << std::endl;
 	shopping();
+	std::cout << "~~~~~~~~~~~~~~Additional Program 2~~~~~~~~~~~~~~" << std::endl;
 }

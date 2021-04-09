@@ -5,6 +5,8 @@
 #include <random>
 #include <cmath>
 #include <stdlib.h>
+#include "shopping.hpp"
+
 
 // Uniform Dist function
 int RandomBetweenU(int first, int last)
@@ -81,4 +83,7 @@ int main()
 	PrintDistribution(histU);
 	std::cout << std::endl << "rand distribution" << std::endl;
 	PrintDistribution(histR);
+
+	std::cout << "~~~~~~~~~~~~~~Additional Program 2~~~~~~~~~~~~~~" << std::endl;
+	shopping();
 }

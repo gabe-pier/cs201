@@ -111,11 +111,18 @@ int main()
     ppm.toASCII();
 
     cout << "Program finished" << endl;
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Additional Program 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    string text = "ATTACKATONCE";
-    int s = 4;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Additional Program 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    string text;
+    int s;
+    cout << "Please input a string (no numbers):" << endl;
+    getline(cin, text);
+    while (is_number(text) == true) {
+        cout << "Input a string!!!" << endl;
+        getline(cin, text);
+    }
+    cout << "Please input an integer for the cypher displacement:" << endl;
+    cin >> s;
     cout << "Text : " << text;
     cout << "\nShift: " << s;
     cout << "\nCipher: " << caesar(text, s) << endl;
-
 }

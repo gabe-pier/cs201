@@ -29,3 +29,29 @@ string caesar(string text, int s)
     // Return the resulting string
     return result;
 }
+
+bool is_number(const std::string& c)
+{
+    if (c.find('0') != std::string::npos ||
+        c.find('1') != std::string::npos ||
+        c.find('2') != std::string::npos ||
+        c.find('3') != std::string::npos ||
+        c.find('4') != std::string::npos ||
+        c.find('5') != std::string::npos ||
+        c.find('6') != std::string::npos ||
+        c.find('7') != std::string::npos ||
+        c.find('8') != std::string::npos ||
+        c.find('9') != std::string::npos)
+    {
+        return true;
+    }
+
+    return false;
+}
+bool check_number(const string& str)
+{
+    for (int i = 0; i < str.length(); i++)
+        if (isdigit(str[i]) == false)
+            return false;
+    return true;
+}

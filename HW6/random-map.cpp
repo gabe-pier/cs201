@@ -86,5 +86,4 @@ int main()
 
 	std::cout << "~~~~~~~~~~~~~~Additional Program 1~~~~~~~~~~~~~~" << std::endl;
 	shopping();
-	std::cout << "~~~~~~~~~~~~~~Additional Program 2~~~~~~~~~~~~~~" << std::endl;
 }

@@ -111,25 +111,11 @@ int main()
     ppm.toASCII();
 
     cout << "Program finished" << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Additional Program 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    string text = "ATTACKATONCE";
+    int s = 4;
+    cout << "Text : " << text;
+    cout << "\nShift: " << s;
+    cout << "\nCipher: " << caesar(text, s) << endl;
+
 }
-
-#if 0
-// TARGET for new main()
-int main()
-{
-    cout << "Program to convert a ppm to ascii art" << endl;
-
-    // move into functions
-    readFile("parrot.ppm");
-    rgb2ascii();
-
-    // move into a class
-    RGBImage ppm("parrot.ppm");
-    ppm.toASCII();
-
-    // future capabilities class can provide
-    ppm.writeFile("newparrot.ppm");
-    ppm.writePGMFile("newparrot.pgm");
-}
-
-#endif

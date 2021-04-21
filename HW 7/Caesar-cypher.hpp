@@ -1,6 +1,6 @@
 #pragma once
-#ifndef Caesar-cypher_hpp
-#define Caesar-cypher_hpp
+#ifndef Caesar_cypher_hpp
+#define Caesar_cypher_hpp
 using namespace std;
-void caesar();
+string caesar(string text, int s);
 #endif

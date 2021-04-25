@@ -27,9 +27,10 @@ public:
 		return _ycord;
 	}
 
-	//function to move pieces
+	//functions to move pieces
+	void selectpiece();
+	void selectspace();
 	void movepiece();
-
 
 private:
 	//board coordinates and player pieces

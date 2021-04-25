@@ -8,6 +8,7 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+using std::cin;
 #include <windows.h>
 #include "Checkers.hpp"
 
@@ -51,5 +52,26 @@ void Checkers::initPieces() {
 			if (((x + y) % 2) == 0)
 				board[y][x] = p2;
 		}
+	}
+}
+
+void Checkers::selectpiece() {
+	int xselect;
+	int yselect;
+	cout << "Enter the x coordinate of the piece you want to move: ";
+	cin >> xselect;
+	if (xselect < 0 | xselect > 8) {
+		cout << "sorry, your coordinates are out of bounds. Try again: ";
+		cin >> xselect;
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << "Enter the y coordinate of the piece you want to move: ";
+	cin >> yselect;
+	if (yselect < 0 | yselect > 8) {
+		cout << "sorry, your coordinates are out of bounds. Try again: ";
+		cin >> yselect;
+		cout << endl;
 	}
 }

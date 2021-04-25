@@ -14,6 +14,6 @@ public:
 
 private:
 	char board[8][8];
-	char p1 = 'G';
-	char p2 = 'R';
+	char p1 = 'X';
+	char p2 = 'O';
 };

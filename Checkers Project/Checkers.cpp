@@ -60,7 +60,7 @@ void Checkers::selectpiece() {
 	int yselect;
 	cout << "Enter the x coordinate of the piece you want to move: ";
 	cin >> xselect;
-	if (xselect < 0 | xselect > 8) {
+	if ((xselect < 0) | (xselect > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> xselect;
 		cout << endl;
@@ -69,9 +69,30 @@ void Checkers::selectpiece() {
 	cout << endl;
 	cout << "Enter the y coordinate of the piece you want to move: ";
 	cin >> yselect;
-	if (yselect < 0 | yselect > 8) {
+	if ((yselect < 0) | (yselect > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> yselect;
+		cout << endl;
+	}
+}
+
+void Checkers::selectspace() {
+	int xspace;
+	int yspace;
+	cout << "Enter the x coordinate of the space you want to move to: ";
+	cin >> xspace;
+	if ((xspace < 0) | (xspace > 8)) {
+		cout << "sorry, your coordinates are out of bounds. Try again: ";
+		cin >> xspace;
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << "Enter the y coordinate of the space you want to move to: ";
+	cin >> yspace;
+	if ((yspace < 0) | (yspace > 8)) {
+		cout << "sorry, your coordinates are out of bounds. Try again: ";
+		cin >> yspace;
 		cout << endl;
 	}
 }

@@ -35,3 +35,7 @@ void Checkers::printBoard() {
 		cout << endl << "-----------------------------------" << endl;
 	}
 }
+
+void Checkers::initPieces() {
+
+}

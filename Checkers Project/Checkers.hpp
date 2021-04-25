@@ -10,8 +10,10 @@ class Checkers
 public:
 	void initBoard();
 	void printBoard();
+	void initPieces();
 
 private:
 	char board[8][8];
-
+	char p1 = 'G';
+	char p2 = 'R';
 };

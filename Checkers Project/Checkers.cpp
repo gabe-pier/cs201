@@ -9,7 +9,6 @@
 using std::cout;
 using std::endl;
 using std::cin;
-#include <windows.h>
 #include "Checkers.hpp"
 
 void Checkers::initBoard() {
@@ -112,14 +111,11 @@ void Checkers::movepiece(bool& turn) {
 		while (test) {
 			cout << "player 1's turn." << endl;
 			selectpiece();
-			int oldx;
-			int oldy;
+			int oldx = getx();
+			int oldy = gety();
 			if (board[gety()][getx()] == p1) {
-				cout << "testing 123" << endl;
 				bool test2 = true;
 				while (test2) {
-					oldx = getx();
-					oldy = gety();
 					selectspace();
 					if (board[gety()][getx()] == p1) {
 						cout << "invalid move" << endl;
@@ -130,6 +126,9 @@ void Checkers::movepiece(bool& turn) {
 					else if (board[gety()][getx()] == '-') {
 						cout << "invalid move" << endl;
 					}
+					else if (gety() < oldy) {
+						cout << "invalid move" << endl;
+					}
 					else {
 						board[gety()][getx()] = p1;
 						test2 = false;
@@ -137,18 +136,15 @@ void Checkers::movepiece(bool& turn) {
 				}
 				board[oldy][oldx] = ' ';
 				printBoard();
-				cout << "end of player 2" << endl;
+				cout << "end of player 1" << endl;
 
 				cout << "player 2's turn." << endl;
 				selectpiece();
-				int oldx;
-				int oldy;
+				int oldx = getx();
+				int oldy = gety();
 				if (board[gety()][getx()] == p2) {
-					cout << "testing 123" << endl;
 					bool test2 = true;
 					while (test2) {
-						oldx = getx();
-						oldy = gety();
 						selectspace();
 						if (board[gety()][getx()] == p1) {
 							cout << "invalid move" << endl;
@@ -157,6 +153,9 @@ void Checkers::movepiece(bool& turn) {
 							cout << "invalid move" << endl;
 						}
 						else if (board[gety()][getx()] == '-') {
+							cout << "invalid move" << endl;
+						}
+						else if (gety() > oldy) {
 							cout << "invalid move" << endl;
 						}
 						else {

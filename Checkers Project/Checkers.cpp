@@ -181,7 +181,6 @@ void Checkers::movepiece(bool& turn) {
 							cout << "invalid move" << endl;
 						}
 						else if ((abs(gety() - oldy) > 1) || (abs(getx() - oldx) > 1)) {
-							cout << gety() - oldy << getx() - oldx << endl;
 							if ((getx() - oldx) == 2) {
 								if (board[gety() + 1][getx() - 1] == p1) {
 									board[gety()][getx()] = p2;

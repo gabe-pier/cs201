@@ -110,12 +110,16 @@ void Checkers::movepiece(bool& turn) {
 	if (turn) {
 		bool test = true;
 		while (test) {
-			cout << board[3][3] << endl;
+			cout << "player 1's turn." << endl;
 			selectpiece();
+			int oldx;
+			int oldy;
 			if (board[gety()][getx()] == p1) {
 				cout << "testing 123" << endl;
 				bool test2 = true;
 				while (test2) {
+					oldx = getx();
+					oldy = gety();
 					selectspace();
 					if (board[gety()][getx()] == p1) {
 						cout << "invalid move" << endl;
@@ -131,13 +135,44 @@ void Checkers::movepiece(bool& turn) {
 						test2 = false;
 					}
 				}
+				board[oldy][oldx] = ' ';
 				printBoard();
-				cout << "end of player1" << endl;
-				test = false;
-			}
+				cout << "end of player 2" << endl;
 
-			else {
-				cout << "that is not your piece." << endl;
+				cout << "player 2's turn." << endl;
+				selectpiece();
+				int oldx;
+				int oldy;
+				if (board[gety()][getx()] == p2) {
+					cout << "testing 123" << endl;
+					bool test2 = true;
+					while (test2) {
+						oldx = getx();
+						oldy = gety();
+						selectspace();
+						if (board[gety()][getx()] == p1) {
+							cout << "invalid move" << endl;
+						}
+						else if (board[gety()][getx()] == p2) {
+							cout << "invalid move" << endl;
+						}
+						else if (board[gety()][getx()] == '-') {
+							cout << "invalid move" << endl;
+						}
+						else {
+							board[gety()][getx()] = p2;
+							test2 = false;
+						}
+					}
+					board[oldy][oldx] = ' ';
+					printBoard();
+					cout << "end of player 2" << endl;
+					test = false;
+				}
+
+				else {
+					cout << "that is not your piece." << endl;
+				}
 			}
 		}
 	}

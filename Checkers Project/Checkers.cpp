@@ -19,6 +19,7 @@ void Checkers::initBoard() {
 				board[y][x] = '-';
 			else if (((x + y + 1) % 2) == 1)
 				board[y][x] = ' ';
+
 		}
 	}
 }
@@ -60,19 +61,23 @@ void Checkers::selectpiece() {
 	int yselect;
 	cout << "Enter the x coordinate of the piece you want to move: ";
 	cin >> xselect;
+	setx(xselect-1);
 	if ((xselect < 0) | (xselect > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> xselect;
 		cout << endl;
+		setx(xselect-1);
 	}
 
 	cout << endl;
 	cout << "Enter the y coordinate of the piece you want to move: ";
 	cin >> yselect;
+	sety(yselect-1);
 	if ((yselect < 0) | (yselect > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> yselect;
 		cout << endl;
+		sety(yselect-1);
 	}
 }
 
@@ -81,18 +86,59 @@ void Checkers::selectspace() {
 	int yspace;
 	cout << "Enter the x coordinate of the space you want to move to: ";
 	cin >> xspace;
+	setx(xspace-1);
 	if ((xspace < 0) | (xspace > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> xspace;
 		cout << endl;
+		setx(xspace-1);
 	}
 
 	cout << endl;
 	cout << "Enter the y coordinate of the space you want to move to: ";
 	cin >> yspace;
+	sety(yspace-1);
 	if ((yspace < 0) | (yspace > 8)) {
 		cout << "sorry, your coordinates are out of bounds. Try again: ";
 		cin >> yspace;
 		cout << endl;
+		sety(yspace-1);
+	}
+}
+
+void Checkers::movepiece(bool& turn) {
+	if (turn) {
+		bool test = true;
+		while (test) {
+			cout << board[3][3] << endl;
+			selectpiece();
+			if (board[gety()][getx()] == p1) {
+				cout << "testing 123" << endl;
+				bool test2 = true;
+				while (test2) {
+					selectspace();
+					if (board[gety()][getx()] == p1) {
+						cout << "invalid move" << endl;
+					}
+					else if (board[gety()][getx()] == p2) {
+						cout << "invalid move" << endl;
+					}
+					else if (board[gety()][getx()] == '-') {
+						cout << "invalid move" << endl;
+					}
+					else {
+						board[gety()][getx()] = p1;
+						test2 = false;
+					}
+				}
+				printBoard();
+				cout << "end of player1" << endl;
+				test = false;
+			}
+
+			else {
+				cout << "that is not your piece." << endl;
+			}
+		}
 	}
 }

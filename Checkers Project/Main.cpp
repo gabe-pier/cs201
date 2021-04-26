@@ -13,5 +13,8 @@ int main() {
 	MyBoard.initBoard();
 	MyBoard.initPieces();
 	MyBoard.printBoard();
+
+	bool player1 = true;
+	MyBoard.movepiece(player1);
 }
 

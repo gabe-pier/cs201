@@ -30,7 +30,7 @@ public:
 	//functions to move pieces
 	void selectpiece();
 	void selectspace();
-	void movepiece();
+	void movepiece(bool& turn);
 
 private:
 	//board coordinates and player pieces
